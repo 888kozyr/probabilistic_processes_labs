@@ -1,7 +1,17 @@
 package com.probobilistic_processes.labs;
 
-public class Main {
+import com.probobilistic_processes.labs.lab1.Lab1;
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+
+    @Override
+    public void start(Stage stage) {
+        Lab1.start(stage);
+    }
+
     public static void main(String[] args) {
-        System.out.println("hello world!");
+        launch(args);
     }
 }
